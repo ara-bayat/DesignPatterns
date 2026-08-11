@@ -9,9 +9,16 @@ public class MainApi {
                 .hobby("Swimming")
                 .build();
         User user2=user.toBuilder().hobby("sleeping").build();
+        User user3=User.builder().hobby("walking").build();
         System.out.println("user");
         System.out.println(user);
         System.out.println("user2");
         System.out.println(user2);
+        System.out.println("user3");
+        System.out.println(user3);
+
+        Person person = Person.builder("Ali")  // firstName اجباری شد
+                .lastName("Rezaei")            // lastName اختیاری
+                .build();
     }
 }
