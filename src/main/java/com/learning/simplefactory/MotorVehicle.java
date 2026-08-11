@@ -1,4 +1,4 @@
-package com.learning.factory;
+package com.learning.simplefactory;
 
 public class MotorVehicle implements Vehicle {
     @Override

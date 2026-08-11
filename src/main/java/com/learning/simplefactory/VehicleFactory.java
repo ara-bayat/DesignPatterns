@@ -1,4 +1,4 @@
-package com.learning.factory;
+package com.learning.simplefactory;
 
 public class VehicleFactory {
 
@@ -13,5 +13,4 @@ public class VehicleFactory {
             return null;
         }
     }
-
 }
