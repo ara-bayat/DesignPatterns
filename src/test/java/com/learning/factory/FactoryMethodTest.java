@@ -1,4 +1,4 @@
-package factory;
+package com.learning.factory;
 
 import com.learning.factory.*;
 import org.junit.jupiter.api.Test;
