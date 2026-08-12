@@ -44,10 +44,23 @@ public class MainApi {
         User2 secondUser2=secondUser.toBuilder().build();
         secondUser2.getHobbies().add("sleeping");
 
+
+        User2 secondUser3 = secondUser.toBuilder()
+                .hobbies(new ArrayList<>(secondUser.getHobbies())) // ← کپی عمیق
+                .build();
+        secondUser3.getHobbies().add("walking");
+
         System.out.println("secondUser");
         System.out.println(secondUser);
         System.out.println("secondUser2");
         System.out.println(secondUser2);
+
+
+        System.out.println("secondUser3");
+        System.out.println(secondUser3);
+
+
+
 
     }
 }
