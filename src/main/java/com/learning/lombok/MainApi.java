@@ -1,5 +1,7 @@
 package com.learning.lombok;
 
+import java.util.ArrayList;
+
 public class MainApi {
     public static void main(String[] args) {
         User user = User.builder()
@@ -27,5 +29,25 @@ public class MainApi {
                 .build();
         System.out.println("person2");
         System.out.println(person2);
+
+        System.out.println("---------------------------");
+
+        User2 secondUser = User2.builder()
+                .name("Ali")
+                .hobbies(new ArrayList<>())
+                .build();
+        secondUser.getHobbies().add("Programming");
+        secondUser.getHobbies().add("Reading");
+        secondUser.getHobbies().add("Swimming");
+
+
+        User2 secondUser2=secondUser.toBuilder().build();
+        secondUser2.getHobbies().add("sleeping");
+
+        System.out.println("secondUser");
+        System.out.println(secondUser);
+        System.out.println("secondUser2");
+        System.out.println(secondUser2);
+
     }
 }
