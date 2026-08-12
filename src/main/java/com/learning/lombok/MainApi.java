@@ -9,7 +9,7 @@ public class MainApi {
                 .hobby("Swimming")
                 .build();
         User user2=user.toBuilder().hobby("sleeping").build();
-        User user3=User.builder().hobby("walking").build();
+        User user3=User.builder().name("tt").hobby("walking").build();
         System.out.println("user");
         System.out.println(user);
         System.out.println("user2");
@@ -17,8 +17,15 @@ public class MainApi {
         System.out.println("user3");
         System.out.println(user3);
 
-        Person person = Person.builder("Ali")  // firstName اجباری شد
-                .lastName("Rezaei")            // lastName اختیاری
+        Person person = Person.builder("alireza")  // firstName اجباری شد
                 .build();
+        System.out.println("person");
+        System.out.println(person);
+
+        Person person2 = person.toBuilder()  // firstName اجباری شد
+                .lastName("ak")
+                .build();
+        System.out.println("person2");
+        System.out.println(person2);
     }
 }
